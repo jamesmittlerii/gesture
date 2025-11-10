@@ -41,7 +41,7 @@ struct ContentView: View {
             // a little header
             Text("Pinch or double tap to zoom").font(.headline)
             // some gummi bears
-            Image("bears")
+            Image("art")
                 .resizable()
                 .scaledToFit()
                 // current scale is controlled by pinching or tapping
