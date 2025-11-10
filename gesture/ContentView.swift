@@ -21,14 +21,14 @@ import SwiftUI
 
 struct ContentView: View {
     // we need to keep track of our current scale and previous
-    @State private var currentScale: CGFloat = 1.0
+    @State private var currentScale: CGFloat = 0.2
     @State private var lastScale: CGFloat = 1.0
     
     // Tracks the zoomed state of the image from double-tapping.
     @State private var isZoomed = false
     
     // Define the range for zooming.
-    private let zoomRange: ClosedRange<CGFloat> = 0.5...3.0
+    private let zoomRange: ClosedRange<CGFloat> = 0.2...3.0
     
     // we need a percentage for the progress slider expressed 0-1
     private var normalizedScale: Double {
